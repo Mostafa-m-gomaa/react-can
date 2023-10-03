@@ -1,0 +1,135 @@
+@import "../helpers/mixins";
+.nav{
+   
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1300;
+   
+    
+    img{
+        width: 230px;
+        position: relative;
+        top: -3px;
+        @include media(mopile){
+       width: 150px;
+               }
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.575);
+        padding: 0 15px;
+        border-bottom: 2px solid white;
+        border-radius: 0 0 15px 15px ;
+        max-height: 100px;
+        overflow: hidden;
+        position: relative;
+        z-index: -5;
+        .burger{
+            display: none;
+            @include media(mopile){
+                display: block;
+                position: relative;
+                z-index: 5000;
+                #checkbox {
+                    display: none;
+                  }
+                  
+                  .toggle {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    transition-duration: .5s;
+                  }
+                  
+                  .bars {
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--my-color);
+                    border-radius: 4px;
+                  }
+                  
+                  #bar2 {
+                    transition-duration: .8s;
+                  }
+                  
+                  #bar1,#bar3 {
+                    width: 70%;
+                  }
+                  
+                  #checkbox:checked + .toggle .bars {
+                    position: absolute;
+                    transition-duration: .5s;
+                  }
+                  
+                  #checkbox:checked + .toggle #bar2 {
+                    transform: scaleX(0);
+                    transition-duration: .5s;
+                  }
+                  
+                  #checkbox:checked + .toggle #bar1 {
+                    width: 100%;
+                    transform: rotate(45deg);
+                    transition-duration: .5s;
+                  }
+                  
+                  #checkbox:checked + .toggle #bar3 {
+                    width: 100%;
+                    transform: rotate(-45deg);
+                    transition-duration: .5s;
+                  }
+                  
+                  #checkbox:checked + .toggle {
+                    transition-duration: .5s;
+                    transform: rotate(180deg);
+                  }
+                        }
+        }
+        .list{
+            display: flex;
+            gap: 40px;
+            justify-content: flex-end;
+            color: rgb(12, 12, 12);
+            font-size: 17px;
+            @include media(mopile){
+                flex-direction: column;
+                gap: 25px;
+                position: fixed;
+                top: 15%;
+                left: -80%;
+                background-color: rgba(0, 0, 0, 0.747);
+                padding: 35px;
+                border-radius: 15px;
+                color: white;
+                font-weight: 400;
+                transition: 0.3s;
+                   }
+            a{
+                position: relative;
+                transition: 0.2s;
+                padding: 12px 8px;
+                border-bottom: 2px solid var(--my-color);
+                &:hover{
+                  background-color: rgba(6, 52, 179, 0.685);
+                  color: white;
+                }
+
+            }
+          
+        }
+        .list-show{
+            @include media(mopile){
+                left: 30% !important;
+                        }
+                
+        }
+    }
+}

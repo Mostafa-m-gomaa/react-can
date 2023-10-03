@@ -1,0 +1,28 @@
+.vidPopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vidPopup div {
+  position: relative;
+  padding: 5px;
+  background-color: white;
+}
+.vidPopup div span {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  z-index: 111111;
+  cursor: pointer;
+  color: rgb(170, 170, 170);
+}
+.cursor-pointer {
+  cursor: pointer;
+}

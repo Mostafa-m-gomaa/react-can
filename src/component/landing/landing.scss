@@ -1,0 +1,91 @@
+@import "../helpers/mixins";
+.landing{
+    width: 100%;
+    padding: 150px 0 10px 0;
+    background-color:var(--other-color);
+    margin-bottom: 30px;
+    height: 75vh;
+    @include media(mopile){
+        background-color: white
+                   };
+.container{
+position: relative;
+display: flex;
+justify-content: space-between;
+height: 80%;
+gap: 20px;
+z-index: 10;
+        
+        @include media(mopile){
+            flex-direction: column;
+                       }}
+                       .img{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                       
+
+                           img{
+                            width: 300px;
+                           }
+                       }
+                       .login{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        @include media(mopile){
+                        width: 100%
+                                       };
+                 form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    // background-color: var(--my-color);
+                    border: 5px solid var(--my-color);
+                    padding: 40px 20px;
+                    border-radius: 10px;
+                    // color: white;
+                    text-align: center;
+                    width: 70%;
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        input{
+                            text-align: center;
+                        }
+                    }
+                    button{
+                        width: 40%;
+                        margin: auto;
+                        background-color: var(--other-color);
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        padding: 8px;
+                    }
+                 }
+                       }
+
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 0;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+  }
+
+
+  
+
+  

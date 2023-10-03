@@ -1,0 +1,10 @@
+.home .container .ideas {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 116px;
+}
+.home .container .ideas img {
+  border-radius: 15px;
+  box-shadow: 5px 5px 12px;
+}/*# sourceMappingURL=home.css.map */
