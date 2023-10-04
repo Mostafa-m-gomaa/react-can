@@ -1,0 +1,33 @@
+.rater-answer {
+  padding: 100px 0 20px 0;
+}
+.rater-answer .container {
+  text-align: center;
+}
+.rater-answer .container .form {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.651);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--other-color);
+  margin: auto;
+}
+.rater-answer .container .form label {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  margin: auto;
+}
+.rater-answer .container .form a {
+  background-color: var(--my-color);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  margin: auto;
+}/*# sourceMappingURL=raters.css.map */

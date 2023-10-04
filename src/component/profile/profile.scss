@@ -5,11 +5,16 @@
 }
 .profile{
     padding: 100px 0 20px 0;
+    .recharts-rectangle{
+        width: 10px !important;
+    }
 .graph{
     .grapgh-title{
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 15px;
         background-color: var(--other-color);
+        max-width: fit-content;
+        margin: auto;
         color: white;
         padding: 10px;
         border-radius: 10px;
@@ -19,6 +24,8 @@
         width: 100%;
         margin-top: 80px;
         height: 400px;
+        display: flex;
+        justify-content: center;
         @include media(mopile){
             display: flex;
             justify-content: center;

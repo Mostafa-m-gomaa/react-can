@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Quess from './component/question/Quess';
 import Profile from './component/profile/Profile';
 import Raters from './component/raters/Raters';
+import RaterAnswer from './component/raters-answers/raterAnswer';
 
 
 
@@ -64,6 +65,8 @@ function App() {
      <Route path="/ques" element={<Quess/>}/>
      <Route path="/raters" element={<Raters/>}/>
      <Route path="/profile" element={<Profile/>}/>
+     <Route path="/rater-answer" element={<RaterAnswer/>}/>
+     <Route path="/raters/:raterEmail/:raterCode" element={<RaterAnswer/>}/>
 
    </Routes>
 

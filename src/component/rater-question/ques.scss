@@ -1,0 +1,164 @@
+@import "../helpers/mixins";
+.ques{
+    padding: 100px 0 20px 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include media(mopile){
+          width: 90%;
+                     };
+        button{
+          width: 200px;
+          background-color: var(--other-color);
+          border: none;
+          padding: 5px;
+          color: white;
+          margin: auto;
+          font-size: 25px;
+          cursor: pointer;
+        }
+        .head{
+            display: flex;
+            width: 90%;
+            border: 10px solid var(--other-color);
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            @include media(mopile){
+              flex-direction: column
+                         };
+            img{
+                width: 20%;
+            }
+            div{
+                text-align: center;
+                width: 60%;
+                font-size: 30px;
+                color: var(--my-color);
+            }
+        }
+        .raters-emails{
+            background-color: rgb(223, 230, 230);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            padding: 15px 0;
+            text-align: center;
+            button{
+                background-color: var(--other-color);
+                color: white;
+                width: 20%;
+                margin: auto;
+                padding: 5px 0;
+                border: none;
+                border-radius: 5px;
+                font-size: 25px;
+                cursor: pointer;
+                transition: 0.2s;
+                &:hover{
+                    background-color: var(--my-color);
+                }
+            }
+            input{
+                height: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        .all-ques{
+            background-color: rgb(223, 230, 230);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            padding: 15px 0;
+            .ques-card{
+                background-color: white;
+                width: 80%;
+                margin: auto;
+                padding: 5px 10px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .radio-input input {
+                    display: none;
+                  }
+                  
+                  .radio-input {
+                    --container_width: 300px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 9999px;
+                    background-color: #fff;
+                    color: #000000;
+                    width: var(--container_width);
+                    overflow: hidden;
+                    border: 1px solid rgba(53, 52, 52, 0.226);
+                    @include media(mopile){
+                      --container_width:240px;
+                                 };
+                  }
+                  
+                  .radio-input label {
+                    
+                    width: 100%;
+                    padding: 10px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    font-weight: 600;
+                    letter-spacing: -1px;
+                    font-size: 14px;
+                    
+                  }
+                  
+                  .selection {
+                    display: none;
+                    position: absolute;
+                    height: 100%;
+                    width: calc(var(--container_width) / 5);
+                    z-index: 0;
+                    left: 0;
+                    top: 0;
+                    transition: .15s ease;
+                  }
+                  
+                  .radio-input label:has(input:checked) {
+                    color: #fff;
+                  }
+                  
+                  .radio-input label:has(input:checked) ~ .selection {
+                    background-color: rgb(11 117 223);
+                    display: inline-block;
+                  }
+                  
+                  .radio-input label:nth-child(1):has(input:checked) ~ .selection {
+                    transform: translateX(calc(var(--container_width) * 0/5));
+                  }
+                  
+                  .radio-input label:nth-child(2):has(input:checked) ~ .selection {
+                    transform: translateX(calc(var(--container_width) * 1/5));
+                  }
+                  
+                  .radio-input label:nth-child(3):has(input:checked) ~ .selection {
+                    transform: translateX(calc(var(--container_width) * 2/5));
+                  }
+                  
+                  .radio-input label:nth-child(4):has(input:checked) ~ .selection {
+                    transform: translateX(calc(var(--container_width) * 3/5));
+                  }
+                  .radio-input label:nth-child(5):has(input:checked) ~ .selection {
+                    transform: translateX(calc(var(--container_width) * 4/5));
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.rater-answer{
+    padding: 100px 0 20px 0;
+    .container{
+        text-align: center;
+        .form{
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.651);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid var(--other-color);
+            margin: auto;
+            label{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                color: white;
+                margin: auto;
+            }
+            a{
+                background-color: var(--my-color);
+                color: white;
+                padding: 5px;
+                border-radius: 5px;
+                width: 100px;
+                margin: auto;
+            }
+        }
+    }
+}
