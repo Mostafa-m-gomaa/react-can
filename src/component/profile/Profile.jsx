@@ -54,7 +54,7 @@ console.log(data)
   },[])
  
   return (
-    <ResponsiveContainer width="70%" height="100%" >
+    <ResponsiveContainer width="90%" height="100%" >
       <BarChart
         width={200}
         height={100}
@@ -115,7 +115,7 @@ console.log(data)
   },[])
  
   return (
-    <ResponsiveContainer width="70%" height="100%">
+    <ResponsiveContainer width="90%" height="100%">
       <BarChart
         width={200}
         height={100}
@@ -258,7 +258,7 @@ const [showFullReport,setShowFullReport]=useState(false)
       doc.addPage();
       doc.addImage(logo, 'JPEG' , 5,5,40,15)
       // doc.text("مقياس نعم أستطيع", 130, 35);
-      doc.addImage(screenshotImage , 'JPEG' , 5,75 , 270 , 200)
+      doc.addImage(screenshotImage , 'JPEG' , 5,20 , 270 , 250)
        doc.save("mypddf.pdf");
  
     });

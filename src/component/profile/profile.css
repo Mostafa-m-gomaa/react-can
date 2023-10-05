@@ -6,8 +6,13 @@
 .profile {
   padding: 100px 0 20px 0;
 }
-.profile .recharts-rectangle {
-  width: 10px !important;
+.profile .recharts-surface {
+  width: 70% !important;
+}
+@media (max-width: 767px) {
+  .profile .recharts-surface {
+    width: 90% !important;
+  }
 }
 .profile .graph .grapgh-title {
   margin-top: 30px;
@@ -16,9 +21,15 @@
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
+  margin-top: 60px;
   color: white;
   padding: 10px;
   border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .profile .graph .grapgh-title {
+    font-size: 10px;
+  }
 }
 .profile #element1 {
   width: 100%;
