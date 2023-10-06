@@ -10,8 +10,17 @@
         width: 70% !important;
         @include media(mopile){
             width: 90% !important ;
+     
           
  };
+    }
+    .recharts-legend-item-text{
+        @include media(mopile){
+           font-size: 10px !important ;}
+    }
+    tspan{
+        @include media(mopile){
+            font-size: 10px !important ;}
     }
 .graph{
     .grapgh-title{
@@ -25,11 +34,11 @@
         padding: 10px;
         border-radius: 10px;
         @include media(mopile){
-            font-size: 10px
+            font-size: 8px
  };
     }
 }
-     #element1{
+     #element1,#element2{
         width: 100%;
         margin-top: 80px;
         height: 400px;

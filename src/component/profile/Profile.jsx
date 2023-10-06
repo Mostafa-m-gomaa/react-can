@@ -258,7 +258,7 @@ const [showFullReport,setShowFullReport]=useState(false)
       doc.addPage();
       doc.addImage(logo, 'JPEG' , 5,5,40,15)
       // doc.text("مقياس نعم أستطيع", 130, 35);
-      doc.addImage(screenshotImage , 'JPEG' , 5,20 , 270 , 250)
+      doc.addImage(screenshotImage , 'JPEG' , 5,20 , 220 , 250)
        doc.save("mypddf.pdf");
  
     });

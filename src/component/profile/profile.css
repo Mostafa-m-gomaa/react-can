@@ -14,6 +14,16 @@
     width: 90% !important;
   }
 }
+@media (max-width: 767px) {
+  .profile .recharts-legend-item-text {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 767px) {
+  .profile tspan {
+    font-size: 10px !important;
+  }
+}
 .profile .graph .grapgh-title {
   margin-top: 30px;
   font-size: 15px;
@@ -28,10 +38,10 @@
 }
 @media (max-width: 767px) {
   .profile .graph .grapgh-title {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
-.profile #element1 {
+.profile #element1, .profile #element2 {
   width: 100%;
   margin-top: 80px;
   height: 400px;
@@ -39,7 +49,7 @@
   justify-content: center;
 }
 @media (max-width: 767px) {
-  .profile #element1 {
+  .profile #element1, .profile #element2 {
     display: flex;
     justify-content: center;
     overflow: hidden;
